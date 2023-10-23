@@ -6,7 +6,7 @@ Mobile : React Native <br><br>
 
 yarn build/ npm run dev<br>
 dist/.htaccess
-/<IfModule mod_rewrite.c><br><br>
+<"IfModule mod_rewrite.c"><br><br>
 
 RewriteEngine On<br>
 RewriteBase /<br>
@@ -16,4 +16,4 @@ RewriteCond %{REQUEST_FILENAME} !-d<br>
 RewriteCond %{REQUEST_FILENAME} !-l<br>
 RewriteRule . /index.html [L]<br>
 <br>
-/</IfModule><br>
+</"IfModule"><br>
