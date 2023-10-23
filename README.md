@@ -4,16 +4,16 @@ Backend : Laravel 10.2 + JWT <br>
 Frontend : React Vite + Bootstrap (Admin/Landing Page) <br>
 Mobile : React Native <br><br>
 
-yarn build/ npm run dev
+yarn build/ npm run dev<br>
 dist/.htaccess
-<IfModule mod_rewrite.c>
+<IfModule mod_rewrite.c><br><br>
 
-RewriteEngine On
-RewriteBase /
-RewriteRule ^index\.html$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-l
-RewriteRule . /index.html [L]
-
-</IfModule>
+RewriteEngine On<br>
+RewriteBase /<br>
+RewriteRule ^index\.html$ - [L]<br>
+RewriteCond %{REQUEST_FILENAME} !-f<br>
+RewriteCond %{REQUEST_FILENAME} !-d<br>
+RewriteCond %{REQUEST_FILENAME} !-l<br>
+RewriteRule . /index.html [L]<br>
+<br>
+</IfModule><br>
