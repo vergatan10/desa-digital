@@ -5,7 +5,7 @@ Frontend : React Vite + Bootstrap (Admin/Landing Page) <br>
 Mobile : React Native <br><br>
 
 yarn build/ npm run dev<br>
-dist/.htaccess
+dist/.htaccess<br><br>
 <"IfModule mod_rewrite.c"><br><br>
 
 RewriteEngine On<br>
