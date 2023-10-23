@@ -6,7 +6,7 @@ Mobile : React Native <br><br>
 
 yarn build/ npm run dev<br>
 dist/.htaccess<br><br>
-<"IfModule mod_rewrite.c"><br><br>
+<"IfModule mod_rewrite.c"><br>
 
 RewriteEngine On<br>
 RewriteBase /<br>
