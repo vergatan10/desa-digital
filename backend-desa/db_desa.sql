@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 15, 2023 at 11:06 AM
+-- Generation Time: Oct 24, 2023 at 07:08 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -36,6 +36,14 @@ CREATE TABLE `aparaturs` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `aparaturs`
+--
+
+INSERT INTO `aparaturs` (`id`, `name`, `role`, `image`, `created_at`, `updated_at`) VALUES
+(2, 'Verga Tandika', 'Kepala Desa', 'k14XlXzWSHXwbyKumA2k6EeEKWKU7DEVQSxbZyGi.jpg', '2023-10-23 07:13:17', '2023-10-23 07:13:17'),
+(3, 'Imelda Febrianti', 'Menteri Keuangan', 'jjj377IULN3JMFtN9gzQKMi71x42ZWjLVSQDu3Dj.jpg', '2023-10-23 07:13:38', '2023-10-23 07:14:17');
+
 -- --------------------------------------------------------
 
 --
@@ -55,7 +63,10 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`id`, `name`, `slug`, `created_at`, `updated_at`) VALUES
-(2, 'Pengumuman', 'pengumuman', '2023-10-15 01:23:16', '2023-10-15 01:23:16');
+(2, 'Pengumuman', 'pengumuman', '2023-10-15 01:23:16', '2023-10-15 01:23:16'),
+(3, 'Agenda', 'agenda', '2023-10-23 06:49:25', '2023-10-23 06:49:25'),
+(4, 'Masyarakat', 'masyarakat', '2023-10-23 06:50:40', '2023-10-23 06:50:40'),
+(5, 'Sosial', 'sosial', '2023-10-23 06:51:00', '2023-10-23 06:52:04');
 
 -- --------------------------------------------------------
 
@@ -132,7 +143,8 @@ CREATE TABLE `model_has_roles` (
 --
 
 INSERT INTO `model_has_roles` (`role_id`, `model_type`, `model_id`) VALUES
-(1, 'App\\Models\\User', 1);
+(1, 'App\\Models\\User', 1),
+(1, 'App\\Models\\User', 3);
 
 -- --------------------------------------------------------
 
@@ -155,7 +167,8 @@ CREATE TABLE `pages` (
 --
 
 INSERT INTO `pages` (`id`, `user_id`, `title`, `slug`, `content`, `created_at`, `updated_at`) VALUES
-(2, 1, 'Sejarah Desa', 'sejarah-desa', 'Sejarah Desa', '2023-10-15 01:59:43', '2023-10-15 01:59:43');
+(2, 1, 'Sejarah Desa', 'sejarah-desa', 'Sejarah Desa', '2023-10-15 01:59:43', '2023-10-15 01:59:43'),
+(3, 1, 'Tentang Desa Kami', 'tentang-desa-kami', '<p>Desa kami berdiri sejak 2010.</p>', '2023-10-23 06:59:41', '2023-10-23 07:00:43');
 
 -- --------------------------------------------------------
 
@@ -257,6 +270,13 @@ CREATE TABLE `photos` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `photos`
+--
+
+INSERT INTO `photos` (`id`, `image`, `caption`, `created_at`, `updated_at`) VALUES
+(3, 'GQGLOIC5joxfxDqqSCmKc5s1Sd18M2FBGnYaD1yZ.jpg', 'Ini aja', '2023-10-23 07:07:40', '2023-10-23 07:07:40');
+
 -- --------------------------------------------------------
 
 --
@@ -308,7 +328,8 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `user_id`, `title`, `slug`, `content`, `owner`, `image`, `price`, `phone`, `address`, `created_at`, `updated_at`) VALUES
-(2, 1, 'Bubuk Kunyit Asli 500 Gram', 'bubuk-kunyit-asli-500-gram', 'Bubuk Kunyit Asli 500 Gram', 'May Uswatun Hasanah', 'O4oYpSnHCirLmUHfeRJEeItkslwjRyotuP4BpYPS.jpg', '50000', '895745452221', 'Dusun Santri RT/RW 002/008', '2023-10-15 01:51:28', '2023-10-15 01:51:28');
+(2, 1, 'Bubuk Kunyit Asli 500 Gram', 'bubuk-kunyit-asli-500-gram', 'Bubuk Kunyit Asli 500 Gram', 'May Uswatun Hasanah', 'O4oYpSnHCirLmUHfeRJEeItkslwjRyotuP4BpYPS.jpg', '50000', '895745452221', 'Dusun Santri RT/RW 002/008', '2023-10-15 01:51:28', '2023-10-15 01:51:28'),
+(3, 1, 'Soto Babat Asepz', 'soto-babat-asepz', '<p>Soto babat mank asepz</p>', 'Asepz', 'sd6dmc2IbJdVJ3yrfTgCuhaxIV8lvi6BL5lTPnZh.jpg', '50000', '081928615478', 'Jl. Imam Bonjol Sukajadi II RT5/RW3', '2023-10-23 07:03:24', '2023-10-23 07:04:04');
 
 -- --------------------------------------------------------
 
@@ -396,6 +417,14 @@ CREATE TABLE `sliders` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `sliders`
+--
+
+INSERT INTO `sliders` (`id`, `image`, `created_at`, `updated_at`) VALUES
+(3, 'ttjhU8dPbyQu4IoMfowDak0uicvRvXzbLcFgzvaW.jpg', '2023-10-23 07:11:38', '2023-10-23 07:11:38'),
+(4, 'ndtMmS6QaRWMnoBOcxIGAOZXVARZBYo5v73UtCva.jpg', '2023-10-23 07:18:51', '2023-10-23 07:18:51');
+
 -- --------------------------------------------------------
 
 --
@@ -418,7 +447,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Administrator', 'admin@gmail.com', NULL, '$2y$10$gNRfyaIbSSZyIr/TnS.Ko.LRWa12p46Zrmy6K8mGTqT/qFXqmwDHu', NULL, '2023-10-14 21:05:09', '2023-10-14 21:05:09');
+(1, 'Administrator', 'admin@gmail.com', NULL, '$2y$10$gNRfyaIbSSZyIr/TnS.Ko.LRWa12p46Zrmy6K8mGTqT/qFXqmwDHu', NULL, '2023-10-14 21:05:09', '2023-10-14 21:05:09'),
+(3, 'Verga Tandika', 'verga.tandika@gmail.com', NULL, '$2y$10$jSGN70Tq7MM83mQ1dWM9euiabbyE/upfx0GYHsrBIG/JCKHD/26M2', NULL, '2023-10-23 06:44:36', '2023-10-23 06:45:37');
 
 --
 -- Indexes for dumped tables
@@ -548,13 +578,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `aparaturs`
 --
 ALTER TABLE `aparaturs`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -572,7 +602,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `pages`
 --
 ALTER TABLE `pages`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `permissions`
@@ -590,37 +620,37 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT for table `photos`
 --
 ALTER TABLE `photos`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `roles`
 --
 ALTER TABLE `roles`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `sliders`
 --
 ALTER TABLE `sliders`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Constraints for dumped tables

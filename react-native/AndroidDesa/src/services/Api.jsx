@@ -4,7 +4,7 @@ import axios from 'axios';
 const Api = axios.create({
   //set endpoint API
   // baseURL: 'http://localhost:8000',
-  baseURL: 'https://desa-api.appdev.my.id',
+  baseURL: 'https://api-desa.verga.dev',
 
   //set header axios
   headers: {
