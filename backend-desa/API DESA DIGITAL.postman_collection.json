@@ -1,0 +1,2033 @@
+{
+	"info": {
+		"_postman_id": "2f797c69-8028-4368-a7ad-55daf76f6bca",
+		"name": "API DESA DIGITAL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "20980702"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "admin@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:8000/api/login"
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzQzNDcyLCJleHAiOjE2OTczNDcwNzIsIm5iZiI6MTY5NzM0MzQ3MiwianRpIjoiWFVyM3R0Um40YlhEakJ1YiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.MEd5mDvLwysBuGe5O5Vkjbsn9Ed71rfldQf6bhTPwI8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": "http://localhost:8000/api/admin/roles"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Permissions",
+					"item": [
+						{
+							"name": "Admin Permissions",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzQzOTMwLCJleHAiOjE2OTczNDc1MzAsIm5iZiI6MTY5NzM0MzkzMCwianRpIjoicDUzYnY3WGZmaXVMckxzciIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.f458hfiRQt8-YhtRZNe6HaCF4vdcNgsklHvwn_6JWjI",
+										"type": "text"
+									}
+								],
+								"url": "http://localhost:8000/api/admin/permissions"
+							},
+							"response": []
+						},
+						{
+							"name": "Admin Permission All",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzQzOTMwLCJleHAiOjE2OTczNDc1MzAsIm5iZiI6MTY5NzM0MzkzMCwianRpIjoicDUzYnY3WGZmaXVMckxzciIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.f458hfiRQt8-YhtRZNe6HaCF4vdcNgsklHvwn_6JWjI",
+										"type": "text"
+									}
+								],
+								"url": "http://localhost:8000/api/admin/permissions/all"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Roles",
+					"item": [
+						{
+							"name": "Admin Roles All",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"url": "http://localhost:8000/api/admin/roles"
+							},
+							"response": []
+						},
+						{
+							"name": "Admin Roles Store",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "author",
+											"type": "text"
+										},
+										{
+											"key": "permissions[]",
+											"value": "categories.index",
+											"type": "text"
+										},
+										{
+											"key": "permissions[]",
+											"value": "posts.index",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://localhost:8000/api/admin/roles"
+							},
+							"response": []
+						},
+						{
+							"name": "Admin Roles Show",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "http://localhost:8000/api/admin/roles/2"
+							},
+							"response": []
+						},
+						{
+							"name": "Admin Roles Update",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Author - Article",
+											"type": "text"
+										},
+										{
+											"key": "permissions[]",
+											"value": "categories.index",
+											"type": "text"
+										},
+										{
+											"key": "permissions[]",
+											"value": "posts.index",
+											"type": "text"
+										},
+										{
+											"key": "_method",
+											"value": "PUT",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://localhost:8000/api/admin/roles/2"
+							},
+							"response": []
+						},
+						{
+							"name": "Admin Roles Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "http://localhost:8000/api/admin/roles/2"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Users",
+					"item": [
+						{
+							"name": "Admin User All",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "http://localhost:8000/api/admin/users"
+							},
+							"response": []
+						},
+						{
+							"name": "Admin User Store",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Verga",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "verga@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "password_confirmation",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "roles[]",
+											"value": "admin",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://localhost:8000/api/admin/users"
+							},
+							"response": []
+						},
+						{
+							"name": "Admin User Show :id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "http://localhost:8000/api/admin/users/2"
+							},
+							"response": []
+						},
+						{
+							"name": "Admin User Update :id",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Verga Tandika",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "verga@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "password_confirmation",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "roles",
+											"value": "admin",
+											"type": "text"
+										},
+										{
+											"key": "_method",
+											"value": "PATCH",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://localhost:8000/api/admin/users/2"
+							},
+							"response": []
+						},
+						{
+							"name": "Admin User Destroy :id",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "http://localhost:8000/api/admin/users/2"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Categories",
+					"item": [
+						{
+							"name": "Admin Categories Index",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "http://localhost:8000/api/admin/categories"
+							},
+							"response": []
+						},
+						{
+							"name": "Admin Categories Store",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Pengumuman",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://localhost:8000/api/admin/categories"
+							},
+							"response": []
+						},
+						{
+							"name": "Admin Categories Show :id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "http://localhost:8000/api/admin/categories/1"
+							},
+							"response": []
+						},
+						{
+							"name": "Admin Categories Update :id",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Pengumuman - Edit",
+											"type": "text"
+										},
+										{
+											"key": "_method",
+											"value": "PATCH",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://localhost:8000/api/admin/categories/1"
+							},
+							"response": []
+						},
+						{
+							"name": "Admin Categories Destroy :id",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "http://localhost:8000/api/admin/categories/1"
+							},
+							"response": []
+						},
+						{
+							"name": "Admin Categories All",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "http://localhost:8000/api/admin/categories/all"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Posts",
+					"item": [
+						{
+							"name": "Admin Posts Index",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "http://localhost:8000/api/admin/posts"
+							},
+							"response": []
+						},
+						{
+							"name": "Admin Posts Store",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/USER/Downloads/wallpaper/LOGO S5 WM-01.jpg"
+										},
+										{
+											"key": "title",
+											"value": "Bersih-bersih Lingkugan Sebelum 17 Agustus",
+											"type": "text"
+										},
+										{
+											"key": "category_id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "content",
+											"value": "Bersih-bersih Lingkugan Sebelum 17 Agustus",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://localhost:8000/api/admin/posts"
+							},
+							"response": []
+						},
+						{
+							"name": "Admin Posts Show :id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "http://localhost:8000/api/admin/posts/4"
+							},
+							"response": []
+						},
+						{
+							"name": "Admin Posts Update :id",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"type": "file",
+											"src": []
+										},
+										{
+											"key": "title",
+											"value": "Bersih-bersih Lingkugan Sebelum 17 Agustus Edit",
+											"type": "text"
+										},
+										{
+											"key": "category_id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "content",
+											"value": "Bersih-bersih Lingkugan Sebelum 17 Agustus",
+											"type": "text"
+										},
+										{
+											"key": "_method",
+											"value": "PATCH",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://localhost:8000/api/admin/posts/4"
+							},
+							"response": []
+						},
+						{
+							"name": "Admin Posts Destroy :id",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "http://localhost:8000/api/admin/posts/4"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Products",
+					"item": [
+						{
+							"name": "Admin Products Index",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "http://localhost:8000/api/admin/products"
+							},
+							"response": []
+						},
+						{
+							"name": "Admin Products Store",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/USER/Downloads/wallpaper/LOGO S5 WM-01.jpg"
+										},
+										{
+											"key": "title",
+											"value": "Bubuk Kunyit Asli 500 Gram",
+											"type": "text"
+										},
+										{
+											"key": "content",
+											"value": "Bubuk Kunyit Asli 500 Gram",
+											"type": "text"
+										},
+										{
+											"key": "owner",
+											"value": "May Uswatun Hasanah",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "50000",
+											"type": "text"
+										},
+										{
+											"key": "address",
+											"value": "Dusun Santri RT/RW 002/008",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "895745452221",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://localhost:8000/api/admin/products"
+							},
+							"response": []
+						},
+						{
+							"name": "Admin Products Show :id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/USER/Downloads/wallpaper/LOGO S5 WM-01.jpg",
+											"disabled": true
+										},
+										{
+											"key": "title",
+											"value": "Bubuk Kunyit Asli 500 Gram",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "content",
+											"value": "Bubuk Kunyit Asli 500 Gram",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "owner",
+											"value": "May Uswatun Hasanah",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "price",
+											"value": "50000",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "address",
+											"value": "Dusun Santri RT/RW 002/008",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "phone",
+											"value": "895745452221",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": "http://localhost:8000/api/admin/products/1"
+							},
+							"response": []
+						},
+						{
+							"name": "Admin Products Update :id",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"type": "file",
+											"src": []
+										},
+										{
+											"key": "title",
+											"value": "Bubuk Kunyit Asli 500 Gram Edit",
+											"type": "text"
+										},
+										{
+											"key": "content",
+											"value": "Bubuk Kunyit Asli 500 Gram",
+											"type": "text"
+										},
+										{
+											"key": "owner",
+											"value": "May Uswatun Hasanah",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "50000",
+											"type": "text"
+										},
+										{
+											"key": "address",
+											"value": "Dusun Santri RT/RW 002/008",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "895745452221",
+											"type": "text"
+										},
+										{
+											"key": "_method",
+											"value": "PATCH",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://localhost:8000/api/admin/products/1"
+							},
+							"response": []
+						},
+						{
+							"name": "Admin Products Destroy :id",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "http://localhost:8000/api/admin/products/1"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Pages",
+					"item": [
+						{
+							"name": "Admin Pages Index",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "http://localhost:8000/api/admin/pages"
+							},
+							"response": []
+						},
+						{
+							"name": "Admin Pages Store",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzYwMzczLCJleHAiOjE2OTczNjM5NzMsIm5iZiI6MTY5NzM2MDM3MywianRpIjoieEpaemFSUXRtRlN2QmtJeiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.nXjrMxls3GDylQMDNZxGaN4dp2k8O5vt_UzA7FhOXJo",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "Sejarah Desa",
+											"type": "text"
+										},
+										{
+											"key": "content",
+											"value": "Sejarah Desa",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://localhost:8000/api/admin/pages"
+							},
+							"response": []
+						},
+						{
+							"name": "Admin Pages Show :id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "Sejarah Desa",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "content",
+											"value": "Sejarah Desa",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": "http://localhost:8000/api/admin/pages/1"
+							},
+							"response": []
+						},
+						{
+							"name": "Admin Pages Update :id",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "Sejarah Desa Edit",
+											"type": "text"
+										},
+										{
+											"key": "content",
+											"value": "Sejarah Desa",
+											"type": "text"
+										},
+										{
+											"key": "_method",
+											"value": "PATCH",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://localhost:8000/api/admin/pages/1"
+							},
+							"response": []
+						},
+						{
+							"name": "Admin Pages Destroy :id",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "http://localhost:8000/api/admin/pages/1"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Photos",
+					"item": [
+						{
+							"name": "Admin Photo Index",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "http://localhost:8000/api/admin/photos"
+							},
+							"response": []
+						},
+						{
+							"name": "Admin Photo Store",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/USER/Downloads/wallpaper/LOGO S5 WM-01.jpg"
+										},
+										{
+											"key": "caption",
+											"value": "Bersih - bersih lingkungan",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://localhost:8000/api/admin/photos"
+							},
+							"response": []
+						},
+						{
+							"name": "Admin Photo Destroy",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "http://localhost:8000/api/admin/photos/1"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Sliders",
+					"item": [
+						{
+							"name": "Admin Slider Index",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "http://localhost:8000/api/admin/sliders"
+							},
+							"response": []
+						},
+						{
+							"name": "Admin Slider Store",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/USER/Downloads/wallpaper/LOGO S5 WM-01.jpg"
+										}
+									]
+								},
+								"url": "http://localhost:8000/api/admin/sliders"
+							},
+							"response": []
+						},
+						{
+							"name": "Admin Slider Destroy :id",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "http://localhost:8000/api/admin/sliders/1"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Aparaturs",
+					"item": [
+						{
+							"name": "Admin Aparatur Index",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "http://localhost:8000/api/admin/aparaturs"
+							},
+							"response": []
+						},
+						{
+							"name": "Admin Aparatur Store",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/USER/Downloads/wallpaper/LOGO S5 WM-01.jpg"
+										},
+										{
+											"key": "name",
+											"value": "Verga Tandika",
+											"type": "text"
+										},
+										{
+											"key": "role",
+											"value": "Kepala Desa",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://localhost:8000/api/admin/aparaturs"
+							},
+							"response": []
+						},
+						{
+							"name": "Admin Aparatur Show :id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/USER/Downloads/wallpaper/LOGO S5 WM-01.jpg",
+											"disabled": true
+										},
+										{
+											"key": "name",
+											"value": "Verga Tandika",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "role",
+											"value": "Kepala Desa",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": "http://localhost:8000/api/admin/aparaturs/1"
+							},
+							"response": []
+						},
+						{
+							"name": "Admin Aparatur Update :id",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"type": "file",
+											"src": []
+										},
+										{
+											"key": "name",
+											"value": "Verga Tandika",
+											"type": "text"
+										},
+										{
+											"key": "role",
+											"value": "Kepala Desa - Edit",
+											"type": "text"
+										},
+										{
+											"key": "_method",
+											"value": "PATCH",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://localhost:8000/api/admin/aparaturs/1"
+							},
+							"response": []
+						},
+						{
+							"name": "Admin Aparatur Destroy :id",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzU2NzYwLCJleHAiOjE2OTczNjAzNjAsIm5iZiI6MTY5NzM1Njc2MCwianRpIjoiWFpINlZOZmpJR0oxMWRaRyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-Y26QXfUalvtTVHpyXC0nC0--JKG-g32AMIEQa4Wk2o",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"type": "file",
+											"src": []
+										}
+									]
+								},
+								"url": "http://localhost:8000/api/admin/aparaturs/1"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Admin Dashboard",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjk3MzQzOTMwLCJleHAiOjE2OTczNDc1MzAsIm5iZiI6MTY5NzM0MzkzMCwianRpIjoicDUzYnY3WGZmaXVMckxzciIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.f458hfiRQt8-YhtRZNe6HaCF4vdcNgsklHvwn_6JWjI",
+								"type": "text"
+							}
+						],
+						"url": "http://localhost:8000/api/admin/dashboard"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Public",
+			"item": [
+				{
+					"name": "Posts",
+					"item": [
+						{
+							"name": "Public Posts Index",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "http://localhost:8000/api/public/posts"
+							},
+							"response": []
+						},
+						{
+							"name": "Public Posts Show :slug",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "http://localhost:8000/api/public/posts/bersih-bersih-lingkugan-sebelum-17-agustus"
+							},
+							"response": []
+						},
+						{
+							"name": "Public Posts Home",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "http://localhost:8000/api/public/posts_home"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Products",
+					"item": [
+						{
+							"name": "Public Products Index",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "http://localhost:8000/api/public/products"
+							},
+							"response": []
+						},
+						{
+							"name": "Public Products Show :slug",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "http://localhost:8000/api/public/products/bubuk-kunyit-asli-500-gram"
+							},
+							"response": []
+						},
+						{
+							"name": "Public Products Home",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": "http://localhost:8000/api/public/products_home"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Pages",
+					"item": [
+						{
+							"name": "Public Pages Index",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:8000/api/public/pages"
+							},
+							"response": []
+						},
+						{
+							"name": "Public Pages Show :slug",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:8000/api/public/pages/sejarah-desa"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Aparaturs",
+					"item": [
+						{
+							"name": "Public Aparaturs Index",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:8000/api/public/aparaturs"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Photos",
+					"item": [
+						{
+							"name": "Public Photos Index",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:8000/api/public/photos"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Sliders",
+					"item": [
+						{
+							"name": "Public Sliders Index",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:8000/api/public/sliders"
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
